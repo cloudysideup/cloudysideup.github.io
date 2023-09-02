@@ -62,7 +62,7 @@ author:
   name   : "Jason Elliott"
   avatar : "/assets/images/cloudy-guy.jpg"
   #"My awesome biography constrained to a sentence or two goes here."
-  bio    : "DevOps Architect with a background in Ops.  A Windows guy in a Linux world."
+  bio    : "An Azure Solution Architect and DevOps Engineer.  Always on a learning journey."
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
