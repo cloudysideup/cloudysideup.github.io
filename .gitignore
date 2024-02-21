@@ -1,4 +1,6 @@
-_site
-.sass-cache
-.jekyll-metadata
-Gemfile.lock
+.vscode/settings.json
+desktop.ini
+Pipfile
+Pipfile.lock
+test-env.yml
+payload.json
