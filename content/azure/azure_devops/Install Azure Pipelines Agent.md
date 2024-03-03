@@ -1,8 +1,16 @@
-```PowerShell
-#
-# Azure Pipelines Agent Install & Configure Script (Windows 7 compatible)
-#
+```powershell
+<#
+.Synopsis
+A script used to install and configure the Azure Pipelines Agent with some backwards Windows compatibility.
 
+.Description
+
+.Notes
+Version : 0.2
+Author : Jason Elliott
+Digital Garden : https://cloudysideup.com
+Disclaimer: This script is provided "AS IS" with no warranties.
+#>
 $path32 = "$HOME\Downloads\vsts-agent-win-x86-2.172.2.zip"
 $path64 = "$HOME\Downloads\vsts-agent-win-x64-2.172.2.zip"
 $url32 = "https://vstsagentpackage.azureedge.net/agent/2.172.2/vsts-agent-win-x86-2.172.2.zip"
