@@ -1,9 +1,9 @@
 ---
-title: Welcome to Cloudy Side Up
+title: Welcome
 ---
 
-This is my digital garden for cloud platform engineering and architecture.  Possibly an evolution into application development.
+This is my digital garden for cloud platform engineering and architecture, and application/service development.
 
-I'm a cloud architect with a background in Microsoft systems engineering and virtualization.  Along the way I've broadened my horizons with Dell compute and networking, Cisco network security and 3Par storage experience.  Using this knowledge I've deployed and maintained hyperconverged infrastructure for companies of varying sizes.
+I'm a cloud platform architect with a background in systems engineering and virtualization.  Half of my career has been in-house, the other half in professional services.  Along the way I've broadened my horizons with a wide variety of compute, networking and storage experience on-prem and in public and gov cloud.  Using this knowledge I've deployed and maintained hyperconverged infrastructure for companies of varying sizes and industries.
 
-I've been working my way up the stack for several years.  While making physical and virtual hardware work together was helpful, and still is when solving platform problems, clicking gave way to scripting.  And scripting is giving way to development.
+Outside of building, deploying and solutioning, I'm raising kids, biking, running, and exploring and learning new hobbies.  Learning and moving is living.
