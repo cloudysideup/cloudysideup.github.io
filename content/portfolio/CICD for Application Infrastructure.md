@@ -1,0 +1,11 @@
+TODO:
+- pipeline of pipelines
+- test integration
+- conditions
+- triggers
+- platforms
+	- Azure Pipelines
+	- GitHub Actions
+	- Jenkins
+	- Artifactory
+	- HCP Terraform
