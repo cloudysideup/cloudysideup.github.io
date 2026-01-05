@@ -36,6 +36,12 @@ resource "aws_instance" "priv-devops" {
     device_index         = 0
   }
 
+  lifecycle {
+    ignore_changes = [
+        network_interface
+    ]
+ }
+
   tags = {
     Name = "devops-priv-ec2"
   }
@@ -46,6 +52,30 @@ resource "aws_security_group" "priv-ec2" {
   tags = {
     type = "priv-ec2-security-group"
   }
+}
+
+resource "aws_vpc_security_group_ingress_rule" "allow_tls_ipv4" {
+  security_group_id = aws_security_group.priv-ec2.id
+  cidr_ipv4         = aws_vpc.priv-devops.cidr_block
+  ip_protocol       = "-1"
+}
+
+resource "aws_vpc_security_group_ingress_rule" "allow_tls_ipv6" {
+  security_group_id = aws_security_group.priv-ec2.id
+  cidr_ipv6         = aws_vpc.priv-devops.ipv6_cidr_block
+  ip_protocol       = "-1"
+}
+
+resource "aws_vpc_security_group_egress_rule" "allow_all_traffic_ipv4" {
+  security_group_id = aws_security_group.priv-ec2.id
+  cidr_ipv4         = "0.0.0.0/0"
+  ip_protocol       = "-1" # semantically equivalent to all ports
+}
+
+resource "aws_vpc_security_group_egress_rule" "allow_all_traffic_ipv6" {
+  security_group_id = aws_security_group.priv-ec2.id
+  cidr_ipv6         = "::/0"
+  ip_protocol       = "-1" # semantically equivalent to all ports
 }
 
 resource "aws_network_interface_sg_attachment" "priv-ec2" {
